@@ -1,29 +1,32 @@
-import setuptools
+from setuptools import setup
 
-with open('requirements.txt') as f:
-    dependencies = [l.strip() for l in f]
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-setuptools.setup(
-    name='vanitas',
-    version='2.1',
-    description='Vanitas Wrapper',
+
+setup(
+    name="vanitas",
+    version="0.4",
+    description="vanitas API wrapper",
+    py_modules=["vanitas"],
+    package_dir={'': 'vanitas'},
+    install_requires=["requests", "typing"],
+    extras_require={
+                      "dev":[
+                          "pytest",
+                      ],},
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Operating System :: OS Independent",
+    ],
     long_description=long_description,
     long_description_content_type="text/markdown",
-    license='License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)',
-    author='BlueMoonVampire',
-    author_email='pranavajay712@gmail.com',
-    url='https://github.com/BluemoonVampire/Vanitas-Py.git',
-    packages=setuptools.find_packages(),
-    classifiers=[
-        'Development Status :: 4 - Beta',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: Implementation :: CPython',
-        'Typing :: Typed'
-    ],
-    install_requires=dependencies,
-    python_requires='>=3.6'
+    url="https://github.com/Bluemoonvampire/vanitas-Py",
+    author="Nksamax"
+
 )

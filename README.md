@@ -2,7 +2,7 @@
 
 
 ```
-from vanitas importUser
+from vanitas import User
 
 fk = User()
 

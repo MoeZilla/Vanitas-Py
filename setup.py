@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 
 setup(
-    name="vanitas",
+    name="vanitas-py",
     version="0.5",
     description="vanitas API wrapper",
     py_modules=["vanitas"],

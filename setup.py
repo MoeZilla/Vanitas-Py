@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="vanitas",
-    version="0.4",
+    version="0.5",
     description="vanitas API wrapper",
     py_modules=["vanitas"],
     package_dir={'': 'vanitas'},
@@ -26,7 +26,7 @@ setup(
     ],
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Bluemoonvampire/vanitas-Py",
+    url="https://github.com/Moezilla/vanitas-Py",
     author="Nksamax"
 
 )

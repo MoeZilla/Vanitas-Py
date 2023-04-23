@@ -69,7 +69,7 @@ class Attrify(dict):
 
 class User:
     def __init__(self) -> None:
-        self.url = "https://vanitas-api.up.railway.app/"
+        self.url = "https://vanitas.otakatsu.studio/"
 
 
     def get_info(self , user):
